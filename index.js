@@ -42,3 +42,14 @@ const instrucoesCineIa =
     'Considere gênero, clima, estilo e referências mencionadas pelo usuário.';
 
 let historicoUsuario =  [];
+
+btnSalvar.addEventListener("click", () => {
+    config.endpoint = inputEndpoint.value.trim();
+    config.deployment = inputDeployment.value.trim();
+    config.apiKey = inputApiKey.value.trim();
+
+    config.temperature = Number(inputTemperature.value);
+    config.maxTokens = Number(inputMaxTokens.value);
+});
+
+
